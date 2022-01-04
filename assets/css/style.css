@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 1.1rem;
-    color: #ffffff;
+    color: black;
 }
 
 .container{
@@ -54,6 +54,7 @@ nav ul li:hover{
 }
 nav ul li a{
     text-decoration: none;
+    color: #fff;
 }
 
 /* Estlização do banner */
@@ -78,6 +79,7 @@ nav ul li a{
 
 .informations h1{
     font-size: 2.5rem;
+    color: #fff;
 }
 
 #dev-software{
@@ -87,6 +89,7 @@ nav ul li a{
 .informations h2{
     font-size: 1rem;
     margin-bottom: 3rem;
+    color: #fff;
 }
 
 .informations button{
@@ -149,6 +152,121 @@ nav ul li a{
     text-align: center;
 }
 
+#barra{
+    border: 0.5px solid #7B2D8C;
+    width: 60%;
+    margin-bottom: 3rem;
+}
+
+/* Estilização da seção contato */
+
+#contato{
+    background-color: hsla(0, 0%, 77%, 0.17);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contato{
+    padding: 3rem 2rem;
+    flex-direction: column;
+}
+
+#contato h2{
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.form-informacoes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 6;
+}
+
+form > div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    padding: 0.5rem 0;
+}
+
+label{
+    font-size: 0.9rem;
+}   
+
+form input{
+    width: 100%;
+    border: 2px solid #A8A3A3;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.3rem;
+    outline: none;
+}
+
+.email-fone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+form button{
+    width: 80%;
+    background: #551A7D;
+    border: 2px solid #A8A3A3;
+    border-radius: 5px;
+    color: white;
+    padding: 0.1rem;
+}
+
+.email-fone div{
+    flex: 1;
+}
+
+#label-input-fone{
+    padding-left: 0.5rem;
+}
+
+#mensagem{
+    height: 6rem;
+}
+
+#contato aside{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 0.1rem;
+
+}
+
+aside > h3{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+aside div{
+    font-size: 0.9rem;
+}
+
+aside img{
+    height: 15px;
+    width: 15px;
+}
 
 /* Estlização da seção footer */
 
