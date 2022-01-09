@@ -130,7 +130,13 @@ nav ul li a{
     align-items: center;
 }
 
-#sobre-titulos h2{
+/* #sobre-titulos h2{
+    font-size: 2.5rem;
+    color: #7B2D8C;
+    margin-bottom: 2rem;
+} */
+
+.titulos-roxo{
     font-size: 2.5rem;
     color: #7B2D8C;
     margin-bottom: 2rem;
@@ -152,10 +158,82 @@ nav ul li a{
     text-align: center;
 }
 
-#barra{
+.barra{
     border: 0.5px solid #7B2D8C;
     width: 60%;
     margin-bottom: 3rem;
+}
+
+/* Estilização da seção projetos */
+
+#projetos{
+    display: flex;
+    justify-content: center;
+    background-color: hsla(0, 0%, 77%, 0.17);
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.projetos p{
+    margin-bottom: 2.5rem;
+}
+
+.cards-projetos{
+    height: 15rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.card{
+    height: 15rem;
+    width: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(../img/programmer.jpg);
+    background-size: cover;
+    background-position:center;
+    transition: 0.3s;
+    
+}
+
+.card:hover{
+    height: 16rem;
+    width: 12rem;
+}
+
+.componentes-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao-cards{
+    padding: 0.5rem 1rem;
+    background-color: #7B2D8C;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.botao-cards:hover{
+    background-color: #a558b6;
+    cursor: pointer;
+}
+
+.teclado{
+    height: 32px;
+    width: 32px;
 }
 
 /* Estilização da seção contato */
@@ -172,11 +250,6 @@ nav ul li a{
 .contato{
     padding: 3rem 2rem;
     flex-direction: column;
-}
-
-#contato h2{
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
 }
 
 .form-informacoes{
@@ -326,6 +399,7 @@ footer{
     height: 60px;
     width: 60px;
 }
+
 
 
 
