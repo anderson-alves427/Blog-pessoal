@@ -9,11 +9,13 @@
 }
 
 .container{
-    width: 1100px;
+    width: 1024px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
 
 /* Estilização da seção menu */
 
@@ -71,6 +73,7 @@ nav ul li a{
 }
 
 .informations{
+    max-width: 100%;
     align-items: flex-start;
     flex-direction: column;
     padding: 2rem;
@@ -184,7 +187,6 @@ nav ul li a{
 }
 
 .cards-projetos{
-    height: 15rem;
     width: 80%;
     display: flex;
     align-items: center;
@@ -248,8 +250,9 @@ nav ul li a{
 }
 
 .contato{
-    padding: 3rem 2rem;
+    /* padding: 3rem 2rem; */
     flex-direction: column;
+    max-width: 100%;
 }
 
 .form-informacoes{
@@ -323,6 +326,7 @@ form button{
     flex-direction: column;
     justify-content: flex-start;
     font-size: 0.1rem;
+    flex-wrap: wrap;
 
 }
 
@@ -399,6 +403,74 @@ footer{
     height: 60px;
     width: 60px;
 }
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        background-color: #16303B;
+    }
+
+    .contato {
+        max-width: 100%;
+    }
+
+    .card{
+        height: 12rem;
+        width: 9rem;
+        transition: 0.3s;
+    }
+
+    .card:hover{
+        height: 13rem;
+        width: 10rem;
+    }
+
+    .form-informacoes {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-top: 1rem;
+    }
+
+    .seta-cima{
+        margin-top: 1rem;
+        position: relative;
+    }
+    
+    .footer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 690px) {
+    .cards-projetos{
+        flex-direction: column;
+    }
+
+    .card{
+        height: 14rem;
+        width: 11rem;
+        margin-bottom: 1rem;
+    }
+
+    .card:hover{
+        height: 15rem;
+        width: 11rem;
+    }
+}
+
 
 
 
